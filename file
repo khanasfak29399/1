@@ -1,0 +1,18 @@
+public class VowelCounter {
+    public static int countVowels(String str) {
+        int count = 0;
+        for (char ch : str.toCharArray()) {
+            if (Character.toLowerCase(ch) == 'a' || Character.toLowerCase(ch) == 'e' ||
+                Character.toLowerCase(ch) == 'i' || Character.toLowerCase(ch) == 'o' ||
+                Character.toLowerCase(ch) == 'u') {
+                count++;
+            }
+        }
+        return count;
+    }
+
+    public static void main(String[] args) {
+        String word = "Hello World";
+        System.out.println(countVowels(word));
+    }
+}
